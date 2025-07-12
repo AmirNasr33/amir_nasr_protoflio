@@ -1,0 +1,20 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000a\u0000m\u0000i\u0000r\u0000_\u0000n\u0000a\u0000s\u0000r\u0000_\u0000p\u0000r\u0000o\u0000t\u0000o\u0000f\u0000l\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmirNasr33/amir_nasr_protoflio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmirNasr33/amir_nasr_protoflio/issues"
+  },
+  "homepage": "https://github.com/AmirNasr33/amir_nasr_protoflio#readme"
+}
