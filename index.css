@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Print styles for PDF export */
+@media print {
+  header, footer, .fixed, .sticky, nav, .chat-widget, .darkmode-toggle, .download-btn, .send-btn, .bg-gradient-to-br, .bg-gradient-to-r {
+    display: none !important;
+  }
+  body, #portfolio-content {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
+  button, a {
+    display: none !important;
+  }
+  * {
+    box-shadow: none !important;
+    background-image: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.pdf-export-hidden {
+  position: absolute !important;
+  left: -9999px !important;
+  top: 0 !important;
+  width: 100vw !important;
+  visibility: hidden !important;
+  height: auto !important;
+  overflow: visible !important;
+  display: block !important;
+} 
